@@ -19,6 +19,7 @@ const winPattern = [
 
 const resetGame = () => {
     turn = true;
+    count = 0;
     enableBoxes();
     msgContainer.classList.add("hide");
 }
@@ -82,6 +83,7 @@ boxes.forEach((box) => {
             turn = true;
             count++;
             box.innerText = "O";
+            box.style.color = "#921111"
         }
         box.disabled = true;
 
